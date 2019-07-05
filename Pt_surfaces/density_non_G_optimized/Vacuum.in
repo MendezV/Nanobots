@@ -1,0 +1,6 @@
+#Save the following to Vacuum.in:
+include common.in
+include ${surface}.lattice
+include ${surface}.ionpos
+dump-name ${surface}-Vacuum.$VAR
+dump End State IonicPositions ElecDensity

@@ -1,0 +1,7 @@
+#Save the following to bandstruct.in
+include common.in
+include bandstruct.kpoints
+fix-electron-density totalE.$VAR
+elec-n-bands 12
+dump End BandEigs
+dump-name bandstruct.$VAR

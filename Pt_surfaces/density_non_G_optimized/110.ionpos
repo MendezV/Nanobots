@@ -1,0 +1,6 @@
+#Save the following to 110.ionpos:
+ion Pt  0.0  0.0 -0.187130   1
+ion Pt  0.5  0.5 -0.093565   1
+ion Pt  0.0  0.0  0.000000   1
+ion Pt  0.5  0.5  0.093565   1
+ion Pt  0.0  0.0  0.187130   1

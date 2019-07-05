@@ -1,0 +1,16 @@
+include Pt.lattice
+include Pt.ionpos
+
+kpoint-folding 12 12 12     #Metals need more k-points
+ion-species GBRV/$ID_pbesol.uspp
+elec-cutoff 20 100
+elec-ex-corr gga-PBEsol
+
+
+elec-smearing Fermi 0.01  #Set fillings using Fermi function at T = 0.01 Hartrees
+electronic-SCF
+
+
+lattice-minimize nIterations 10  #Lattice and ionic geometry optimization
+dump-name Pt.$VAR
+dump Ionic State

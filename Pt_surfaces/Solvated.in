@@ -1,0 +1,12 @@
+#Save the following to Solvated.in:
+include common.in
+include ${surface}.lattice
+include ${surface}-Vacuum.ionpos
+initial-state ${surface}-Vacuum.$VAR
+dump End None
+
+fluid LinearPCM
+pcm-variant CANDLE
+fluid-solvent H2O
+fluid-cation Na+ 1.
+fluid-anion F- 1.

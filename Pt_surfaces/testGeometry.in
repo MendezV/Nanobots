@@ -1,0 +1,5 @@
+#Save the following to testGeometry.in
+include ${surface}.lattice   #we will use the same input file later for 110 and 111
+include ${surface}.ionpos
+ion-species GBRV/$ID_pbe.uspp
+#Not a real calculation; missing kpoints and fillings!
